@@ -13,6 +13,7 @@ if ! command -v ansible >/dev/null; then
                 exit 1
         fi
         echo "Installing pip via easy_install."
+        sudo apt-get install python-pip
         wget http://peak.telecommunity.com/dist/ez_setup.py
         sudo python ez_setup.py && rm -f ez_setup.py
         sudo easy_install pip
